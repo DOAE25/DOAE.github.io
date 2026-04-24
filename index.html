@@ -1,442 +1,486 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Doae Oudadda | Portfolio</title>
-  <meta name="description" content="Portfolio de Doae Oudadda, élève ingénieure en systèmes électriques intelligents, orientée automatisme, Industrie 4.0, IoT et data industrielle." />
-  <meta property="og:title" content="Doae Oudadda | Portfolio" />
-  <meta property="og:description" content="Automatisme, systèmes industriels connectés, IoT, data industrielle et projets d'ingénierie." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#9ee8d0" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doae Oudadda | Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio of Doae Oudadda, focused on embedded systems, FPGA, signal processing, and industrial automation.">
+  <meta property="og:title" content="Doae Oudadda | Engineering Portfolio">
+  <meta property="og:description" content="Embedded systems, FPGA, signal processing, and industrial automation projects.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0e1b2a">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8Yihww7kLpLnKZVj59a2yQ1VY4n13VQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container nav" role="navigation" aria-label="Navigation principale">
-      <a class="brand" href="#home" aria-label="Accueil">
-        <span class="logo" aria-hidden="true"><span>DO</span></span>
-        <span>Doae Oudadda</span>
-      </a>
-      <nav id="nav">
-        <div class="links">
-          <a href="#about">À propos</a>
-          <a href="#projects">Projets</a>
-          <a href="#experience">Expériences</a>
-          <a href="#skills">Compétences</a>
-          <a href="#education">Formation</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-      <div class="nav-cta">
-        <button class="theme" id="themeBtn" aria-label="Changer de thème" title="Changer de thème">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-        <a class="btn outline" href="#lets-talk">Me contacter</a>
-        <button class="menu-btn theme" id="menuBtn" aria-label="Menu" title="Menu">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero" aria-labelledby="intro-title">
-      <div class="container">
-        <div>
-          <span class="hello">Bonjour, je suis <strong>Doae Oudadda</strong></span>
-          <h1 id="intro-title">Je conçois des solutions industrielles intelligentes, entre automatisme, IoT et data.</h1>
-          <p class="lead">
-            Élève ingénieure en dernière année à <strong>l'ENSAM Casablanca</strong>, spécialité <strong>Management des Systèmes Électriques Intelligents</strong>, option <strong>Systèmes Industriels Connectés</strong>. Je recherche une <strong>alternance à partir de septembre 2026</strong> en automatisation industrielle, robotique, Industrie 4.0 ou analyse de données industrielles.
-          </p>
-          <div class="hero-cta sr">
-            <a class="btn" href="#projects">Voir mes projets
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-            <a class="btn outline" href="assets/CV.pdf" download>Télécharger mon CV</a>
-          </div>
-        </div>
-        <div class="avatar-wrap sr">
-          <div class="blob"></div>
-          <div class="avatar portrait-frame">
-            <img src="assets/profile.jpg" alt="Portrait de Doae Oudadda" class="portrait-photo" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container" aria-labelledby="about-title">
-      <h2 id="about-title" class="section-title">À propos</h2>
-      <div class="card about-card sr">
-        <div class="about-top">
-          <span class="about-location">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            Casablanca, Maroc
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav" role="navigation" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Home">
+          <span class="brand-mark">DO</span>
+          <span class="brand-text">
+            <strong>Doae Oudadda</strong>
+            <span>Engineering Portfolio</span>
           </span>
-          <div class="about-stats">
-            <div><strong>5+</strong><span>Projets techniques</span></div>
-            <div><strong>4+</strong><span>Certifications clés</span></div>
-          </div>
-        </div>
-        <div class="about-body">
-          <p class="about-lead">Mon objectif est simple : relier <span class="hl">ingénierie</span>, <span class="hl">données</span> et <span class="hl">terrain industriel</span> pour construire des systèmes plus fiables et plus intelligents.</p>
-          <p>Au fil de mes stages et projets académiques, j'ai travaillé sur l'automatisation, la supervision, la prédiction énergétique, l'embarqué et la conception de systèmes complexes. J'aime les environnements où la technique doit rester concrète, utile et robuste.</p>
-          <p>Je prépare la suite de mon parcours autour de l'automatique et de l'Industrie 4.0, avec une forte appétence pour les systèmes connectés, l'IoT industriel, le machine learning appliqué et l'analyse de données industrielles.</p>
-        </div>
-      </div>
-    </section>
+        </a>
 
-    <section id="projects" class="container" aria-labelledby="projects-title">
-      <h2 id="projects-title" class="section-title">Projets sélectionnés</h2>
-      <p class="muted">Une sélection de projets académiques et professionnels issus de mon CV.</p>
-      <div class="grid cols-3" style="margin-top:16px">
-        <article class="card sr" tabindex="0">
-          <div class="badge">PFE · JESA</div>
-          <h3>AI-Based Centralized Route Management System</h3>
-          <p>Développement d'un système centralisé intelligent de gestion de routes pour des architectures multi-systèmes de contrôle et sous-stations. Le projet s'inscrit dans une logique d'intégration, de supervision centralisée et d'aide à la décision pour améliorer la coordination et la robustesse du réseau.</p>
-          <div class="pills" style="margin-top:12px">
-            <span class="badge">IA appliquée</span>
-            <span class="badge">Systèmes de contrôle</span>
-            <span class="badge">Sous-stations</span>
-            <span class="badge">Architecture industrielle</span>
+        <nav id="nav">
+          <div class="links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#focus">Current Focus</a>
+            <a href="#contact">Contact</a>
           </div>
-        </article>
+        </nav>
 
-        <article class="card sr" tabindex="0">
-          <div class="badge">OCP Group</div>
-          <h3>Energy Management System pour JFC3</h3>
-          <p>Conception d'un système de management énergétique pour prédire la consommation électrique du site JFC3 à partir de données réelles du procédé industriel. La démarche a combiné collecte, nettoyage, agrégation de données capteurs, sélection de variables et apprentissage supervisé afin de produire un outil d'aide à la décision énergétique.</p>
-          <div class="pills" style="margin-top:12px">
-            <span class="badge">Energy Management</span>
-            <span class="badge">XGBoost</span>
-            <span class="badge">Random Forest</span>
-            <span class="badge">OLS</span>
-            <span class="badge">MAE · RMSE · R²</span>
-          </div>
-        </article>
-
-        <article class="card sr" tabindex="0">
-          <div class="badge">Marsa Maroc</div>
-          <h3>Supervision et alarme incendie sur grue portuaire</h3>
-          <p>Étude du système d'incendie installé sur la grue REGIANNE 38T et mise en place d'une logique de supervision orientée sécurité. Le travail a porté sur l'analyse du fonctionnement de la grue, la prévention des risques incendie et la garantie du bon fonctionnement du système pour améliorer la sécurité des opérateurs.</p>
-          <div class="pills" style="margin-top:12px">
-            <span class="badge">TIA Portal</span>
-            <span class="badge">STEP 7</span>
-            <span class="badge">Simulation</span>
-            <span class="badge">Supervision</span>
-            <span class="badge">Sécurité industrielle</span>
-          </div>
-        </article>
-
-        <article class="card sr" tabindex="0">
-          <div class="badge">Vision industrielle</div>
-          <h3>Système intelligent de contrôle qualité avec YOLOv8</h3>
-          <p>Développement d'un système de détection et de comptage automatique de pièces industrielles conformes et défectueuses par vision artificielle. Le modèle YOLOv8 a été entraîné sur un dataset annoté via Edge Impulse puis converti au format YOLO, afin d'identifier en temps réel des éléments comme des bolts, washers et faulty washers.</p>
-          <div class="pills" style="margin-top:12px">
-            <span class="badge">YOLOv8</span>
-            <span class="badge">Edge Impulse</span>
-            <span class="badge">Computer Vision</span>
-            <span class="badge">Contrôle qualité</span>
-            <span class="badge">IA</span>
-          </div>
-        </article>
-
-        <article class="card sr" tabindex="0">
-          <div class="badge">VHDL · FPGA</div>
-          <h3>IP Core UART et chiffrement RC6 sur FPGA</h3>
-          <p>Conception de deux projets matériels en VHDL: un IP Core UART avec détection automatique du baud rate sur FPGA iCE40HX1K, basé sur la détection du caractère de synchronisation 0x7F, et l'implémentation de l'algorithme RC6 avec modules de chiffrement/déchiffrement, key scheduling, FSM et validation par testbench.</p>
-          <div class="pills" style="margin-top:12px">
-            <span class="badge">VHDL</span>
-            <span class="badge">FPGA</span>
-            <span class="badge">UART</span>
-            <span class="badge">RC6</span>
-            <span class="badge">ABR 0x7F</span>
-            <span class="badge">Yosys · Nextpnr · Icestorm</span>
-          </div>
-        </article>
-
-        <article class="card sr" tabindex="0">
-          <div class="badge">Modélisation & optimisation</div>
-          <h3>Drone autonome, MES Flow Shop et optimisation d'emploi du temps</h3>
-          <p>Réalisation de projets de modélisation et d'optimisation autour de systèmes complexes: cahier des charges fonctionnel d'un drone autonome de livraison, application MES d'ordonnancement Flow Shop avec algorithmes Johnson et CDS, et mini-projet de recherche opérationnelle pour optimiser l'emploi du temps universitaire par algorithmes génétiques.</p>
-          <div class="pills" style="margin-top:12px">
-            <span class="badge">SysML · UML</span>
-            <span class="badge">CustomTkinter</span>
-            <span class="badge">Johnson · CDS</span>
-            <span class="badge">Diagrammes de Gantt</span>
-            <span class="badge">Algorithmes génétiques</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="container" aria-labelledby="experience-title">
-      <h2 id="experience-title" class="section-title">Expériences</h2>
-      <div class="timeline" style="margin-top:8px">
-        <div class="item card sr">
-          <div class="split" style="justify-content:space-between">
-            <strong>Stagiaire PFE — JESA</strong>
-            <span class="muted">Janvier 2026 – Juin 2026 · Casablanca</span>
-          </div>
-          <p>Développement d'un <strong>AI-Based Centralized Route Management System</strong> pour des environnements multi-systèmes de contrôle et sous-stations.</p>
-        </div>
-        <div class="item card sr">
-          <div class="split" style="justify-content:space-between">
-            <strong>Stagiaire PFA — OCP Group</strong>
-            <span class="muted">Juin 2025 – Août 2025 · Jorf Lasfar</span>
-          </div>
-          <p>Conception d'un <strong>Energy Management System</strong> pour la prédiction de la consommation électrique du site JFC3.</p>
-        </div>
-        <div class="item card sr">
-          <div class="split" style="justify-content:space-between">
-            <strong>Vice-présidente de l'Association des Étudiants — ENSAM Casablanca</strong>
-            <span class="muted">Septembre 2024 – Janvier 2026</span>
-          </div>
-          <p>Coordination d'événements majeurs en collaboration avec l'administration, avec une dimension forte en organisation, leadership et pilotage d'équipe.</p>
-        </div>
-        <div class="item card sr">
-          <div class="split" style="justify-content:space-between">
-            <strong>Enquêtrice — HCP, Recensement National</strong>
-            <span class="muted">Août 2024 – Septembre 2024 · Maroc</span>
-          </div>
-          <p>Collecte et saisie de données socio-économiques sur le terrain dans le respect des procédures, de la qualité des données et des consignes officielles.</p>
-        </div>
-        <div class="item card sr">
-          <div class="split" style="justify-content:space-between">
-            <strong>Stagiaire d'initiation — Marsa Maroc</strong>
-            <span class="muted">Juillet 2024 – Août 2024 · Casablanca</span>
-          </div>
-          <p>Automatisation d'un système de supervision et d'alarme d'incendie sur la grue <strong>REGIANNE 38T</strong>.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="container" aria-labelledby="skills-title">
-      <h2 id="skills-title" class="section-title">Compétences</h2>
-      <div class="grid cols-3">
-        <div class="card sr">
-          <h3>Automatique & Industrie</h3>
-          <div class="pills" style="margin-top:8px">
-            <span class="badge">Régulation</span>
-            <span class="badge">Contrôle</span>
-            <span class="badge">Grafcet</span>
-            <span class="badge">PLC</span>
-            <span class="badge">SCADA</span>
-            <span class="badge">STEP7</span>
-          </div>
-        </div>
-        <div class="card sr">
-          <h3>Programmation</h3>
-          <div class="pills" style="margin-top:8px">
-            <span class="badge">C / C++</span>
-            <span class="badge">Python</span>
-            <span class="badge">Rust</span>
-            <span class="badge">VHDL</span>
-            <span class="badge">SQL</span>
-            <span class="badge">Java</span>
-            <span class="badge">Assembleur</span>
-            <span class="badge">HTML / CSS</span>
-          </div>
-        </div>
-        <div class="card sr">
-          <h3>Data & IA</h3>
-          <div class="pills" style="margin-top:8px">
-            <span class="badge">Data Analysis</span>
-            <span class="badge">Machine Learning</span>
-            <span class="badge">Power BI</span>
-            <span class="badge">Prédiction</span>
-          </div>
-        </div>
-        <div class="card sr">
-          <h3>Outils</h3>
-          <div class="pills" style="margin-top:8px">
-            <span class="badge">MATLAB / Simulink</span>
-            <span class="badge">Altium</span>
-            <span class="badge">TIA Portal</span>
-            <span class="badge">Codesys</span>
-            <span class="badge">Node-RED</span>
-            <span class="badge">Docker</span>
-            <span class="badge">LTspice</span>
-            <span class="badge">CATIA</span>
-            <span class="badge">Caneco BT</span>
-            <span class="badge">LaTeX</span>
-          </div>
-        </div>
-        <div class="card sr">
-          <h3>Protocoles</h3>
-          <div class="pills" style="margin-top:8px">
-            <span class="badge">TCP/IP</span>
-            <span class="badge">UDP</span>
-            <span class="badge">MQTT</span>
-            <span class="badge">OPC UA</span>
-            <span class="badge">LoRaWAN</span>
-          </div>
-        </div>
-        <div class="card sr">
-          <h3>Langues</h3>
-          <div class="pills" style="margin-top:8px">
-            <span class="badge">Arabe · Langue maternelle</span>
-            <span class="badge">Français · C1</span>
-            <span class="badge">Anglais · C1</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="container" aria-labelledby="education-title">
-      <h2 id="education-title" class="section-title">Formation & certifications</h2>
-      <div class="grid cols-1" style="align-items:start; gap:20px">
-        <div class="card sr">
-          <h3>Formation</h3>
-          <div style="display:grid; gap:14px; margin-top:10px">
-            <div class="education-entry">
-              <img class="education-logo" src="assets/projects/logos/ensam.png" alt="ENSAM Casablanca">
-              <div>
-                <strong>ENSAM Casablanca</strong>
-                <div class="muted">Cycle ingénieur — Management des Systèmes Électriques Intelligents (2023 – 2026)</div>
-                <div style="margin-top:6px; font-size:14px">Option : Systèmes Industriels Connectés.</div>
-              </div>
-            </div>
-            <div class="education-entry">
-              <img class="education-logo" src="assets/projects/logos/ensam.png" alt="ENSAM Casablanca">
-              <div>
-                <strong>ENSAM Casablanca</strong>
-                <div class="muted">Cycle préparatoire intégré (2021 – 2023)</div>
-              </div>
-            </div>
-            <div class="education-entry">
-              <img class="education-logo" src="assets/projects/logos/lajoconde.png" alt="GS La Joconde">
-              <div>
-                <strong>GS La Joconde</strong>
-                <div class="muted">Baccalauréat Sciences Mathématiques A (2020 – 2021)</div>
-                <div style="margin-top:6px; font-size:14px">Option français — Mention Très Bien.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card sr">
-          <h3>Certifications & attestations</h3>
-          <div class="certs-list" style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
-            <div class="muted" style="margin-bottom:2px; font-weight:600;">2025</div>
-            <a class="cert-row" href="assets/projects/certifications/ml-certificate.pdf" target="_blank">
-              <div class="cert-title"><strong>Supervised Machine Learning: Regression and Classification</strong> <span class="muted">Coursera · DeepLearning.AI & Stanford University (6 novembre 2025)</span></div>
-              <span class="cert-link">Voir le certificat &rarr;</span>
-            </a>
-
-            <div class="muted" style="margin:18px 0 2px 0; font-weight:600;">2024</div>
-            <a class="cert-row" href="assets/projects/certifications/pcap-python.pdf" target="_blank">
-              <div class="cert-title"><strong>PCAP: Programming Essentials in Python</strong> <span class="muted">Cisco Networking Academy (18 avril 2024)</span></div>
-              <span class="cert-link">Voir le certificat &rarr;</span>
-            </a>
-
-            <div class="muted" style="margin:18px 0 2px 0; font-weight:600;">2023</div>
-            <a class="cert-row" href="assets/projects/certifications/ccna-intro-networks.pdf" target="_blank">
-              <div class="cert-title"><strong>CCNAv7: Introduction aux réseaux</strong> <span class="muted">Cisco Networking Academy (23 novembre 2023)</span></div>
-              <span class="cert-link">Voir le certificat &rarr;</span>
-            </a>
-            <a class="cert-row" href="assets/projects/certifications/cla-c.pdf" target="_blank">
-              <div class="cert-title"><strong>CLA: Programming Essentials in C</strong> <span class="muted">Cisco Networking Academy (3 octobre 2023)</span></div>
-              <span class="cert-link">Voir le certificat &rarr;</span>
-            </a>
-            <a class="cert-row" href="assets/projects/certifications/hcp-formation.pdf" target="_blank">
-              <div class="cert-title"><strong>Attestation de formation</strong> <span class="muted">HCP</span></div>
-              <span class="cert-link">Voir l'attestation &rarr;</span>
-            </a>
-            <a class="cert-row" href="assets/projects/certifications/hcp-participation.pdf" target="_blank">
-              <div class="cert-title"><strong>Attestation de participation</strong> <span class="muted">HCP</span></div>
-              <span class="cert-link">Voir l'attestation &rarr;</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="lets-talk" class="talk-section container sr" aria-labelledby="talk-title">
-      <div class="talk-intro">
-        <h2 id="talk-title" class="section-title">Contact</h2>
-        <p class="muted">Une opportunité d'alternance, un projet ou une collaboration ? Écrivez-moi.</p>
-      </div>
-      <form id="talkForm" class="talk-form" novalidate>
-        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off">
-        <div class="field">
-          <label for="tName">Votre nom <span aria-hidden="true">*</span></label>
-          <input id="tName" name="name" type="text" required placeholder="Entrez votre nom">
-          <p class="err" data-for="tName"></p>
-        </div>
-        <div class="field">
-          <label for="tEmail">Email <span aria-hidden="true">*</span></label>
-          <input id="tEmail" name="email" type="email" required placeholder="vous@example.com" inputmode="email">
-          <p class="err" data-for="tEmail"></p>
-        </div>
-        <div class="field">
-          <label for="tMsg">Message <span aria-hidden="true">*</span></label>
-          <textarea id="tMsg" name="message" required rows="6" placeholder="Décrivez votre besoin, votre projet ou votre opportunité."></textarea>
-          <p class="err" data-for="tMsg"></p>
-        </div>
-        <div class="actions">
-          <button type="submit" class="btn talk-submit">
-            <span>Envoyer</span>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+            <i class="fa-regular fa-moon"></i>
           </button>
-          <button type="reset" class="btn outline talk-reset">Réinitialiser</button>
+          <a class="btn btn-ghost desktop-only" href="assets/CV.pdf" download>Download CV</a>
+          <button class="menu-btn theme-toggle" id="menuBtn" aria-label="Open menu" title="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-        <div class="form-status" aria-live="polite" id="talkStatus"></div>
-      </form>
-    </section>
-  </main>
+      </div>
+    </header>
 
-  <footer id="contact" class="footer">
-    <div class="container footer-content">
-      <div class="footer-main">
-        <div class="footer-brand">
-          <span class="logo" aria-hidden="true" style="margin-right:10px;"><span>DO</span></span>
-          <span class="footer-name"><strong>Doae Oudadda</strong></span>
-          <span class="footer-role">Automatisme · Industrie 4.0 · IoT</span>
-        </div>
-        <div class="footer-links">
-          <a href="#about">À propos</a>
-          <a href="#projects">Projets</a>
-          <a href="#experience">Expériences</a>
-          <a href="#skills">Compétences</a>
-          <a href="#education">Formation</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-social">
-          <a href="mailto:doae.oudadda@gmail.com" aria-label="Email">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
-          </a>
-          <a href="tel:+212642963680" aria-label="Téléphone">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.45-1.28a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"/></svg>
-          </a>
-          <a href="assets/CV.pdf" download aria-label="Télécharger le CV">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-contact">
-        <div>
-          <strong>Localisation :</strong> Casablanca, Maroc<br>
-          <strong>Email :</strong> <a href="mailto:doae.oudadda@gmail.com">doae.oudadda@gmail.com</a><br>
-          <strong>Téléphone :</strong> <a href="tel:+212642963680">+212 642 963 680</a>
-        </div>
-        <div>
-          <strong>Recherche :</strong> Alternance dès septembre 2026<br>
-          <strong>Domaines :</strong> Automatisation, robotique, IoT, data industrielle
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Doae Oudadda. Tous droits réservés.</span>
-        <span class="footer-built">Portfolio personnel</span>
-      </div>
-    </div>
-  </footer>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow sr">Engineering portfolio</span>
+            <h1 class="sr">Engineering Student in Intelligent Electrical Systems</h1>
+            <p class="hero-role sr">Embedded Systems | Signal Processing | Industrial Automation</p>
+            <p class="hero-summary sr">
+              I build robust engineering solutions at the intersection of embedded systems, digital design, control logic, and industrial modeling, with a strong interest in deployable hardware and system-level reliability.
+            </p>
+            <p class="hero-location sr">
+              Open to relocation and international opportunities (France / Europe)
+            </p>
+            <div class="hero-cta sr">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+            <div class="hero-metrics sr">
+              <div class="metric-card">
+                <span class="metric-value">FPGA</span>
+                <span class="metric-label">Digital design and VHDL projects</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">Control</span>
+                <span class="metric-label">Modeling, stability, and industrial logic</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">Python</span>
+                <span class="metric-label">Data processing and technical tooling</span>
+              </div>
+            </div>
+          </div>
 
-  <div id="imageModal" class="img-modal" aria-hidden="true" role="dialog" aria-label="Visionneuse d'image">
-    <button class="modal-close" aria-label="Fermer">&times;</button>
-    <button class="modal-nav prev" aria-label="Image précédente">&#8249;</button>
-    <img id="modalImage" alt="">
-    <button class="modal-nav next" aria-label="Image suivante">&#8250;</button>
+          <div class="hero-visual sr">
+            <div class="portrait-panel">
+              <div class="portrait-badge">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Embedded Systems Profile</span>
+              </div>
+              <img src="assets/profile.jpg" alt="Portrait of Doae Oudadda" class="portrait-photo">
+              <div class="portrait-footer">
+                <div>
+                  <strong>Doae Oudadda</strong>
+                  <span>Embedded systems, FPGA, industrial engineering</span>
+                </div>
+                <a class="inline-link" href="assets/CV.pdf" download>
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  <span>CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading sr">
+            <span class="section-kicker">About</span>
+            <h2>Engineering-oriented profile</h2>
+            <p>
+              I am an engineering student in Intelligent Electrical Systems with a focus on embedded systems, FPGA design, signal processing, and industrial applications. My work combines hardware implementation, technical modeling, and analytical problem solving to turn engineering concepts into structured, testable solutions. I am especially interested in digital communication, control-oriented system behavior, and reliable industrial architectures. Across academic and project work, I aim to build solutions that are technically sound, measurable, and ready for real-world engineering environments. I am looking for opportunities where rigorous design, implementation quality, and continuous learning are valued.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading sr">
+            <span class="section-kicker">Projects</span>
+            <h2>Technical portfolio</h2>
+            <p>Selected engineering projects with clear context, technical challenges, implementation choices, and measurable outcomes.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-featured sr">
+              <div class="project-topline">
+                <span class="project-tag">Featured Project</span>
+                <span class="project-period">FPGA • VHDL</span>
+              </div>
+              <h3>UART IP Core with Auto Baud Rate Detection</h3>
+              <div class="project-body">
+                <div class="project-block">
+                  <h4>Context</h4>
+                  <p>Designed as a digital communication project for FPGA-based embedded systems requiring flexible UART reception without manual baud rate configuration.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Problem</h4>
+                  <p>Fixed baud rate configurations reduce interoperability and make serial communication less adaptable when devices operate under varying timing conditions.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Solution</h4>
+                  <p>Implemented a synthesizable UART IP Core in VHDL with dynamic baud rate detection based on synchronization timing from the <code>0x7F</code> frame, including rising-edge timing analysis and synchronization for accurate bit sampling.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Technologies</h4>
+                  <div class="pills">
+                    <span class="pill">VHDL</span>
+                    <span class="pill">FPGA</span>
+                    <span class="pill">UART</span>
+                    <span class="pill">ICEcube2</span>
+                    <span class="pill">ModelSim</span>
+                    <span class="pill">iCE40HX1K</span>
+                  </div>
+                </div>
+                <div class="project-block">
+                  <h4>Results / Impact</h4>
+                  <p>Validated robust baud detection over standard UART rates, produced a compact reusable IP block, and reinforced practical skills in FPGA design flow, simulation, timing logic, and hardware-oriented verification.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card sr">
+              <div class="project-topline">
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-period">Industrial data</span>
+              </div>
+              <h3>Industrial Energy Consumption Prediction</h3>
+              <div class="project-body">
+                <div class="project-block">
+                  <h4>Context</h4>
+                  <p>Developed in an industrial environment to support energy management through predictive analysis of real process data.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Problem</h4>
+                  <p>Energy consumption is difficult to anticipate without a structured pipeline for sensor aggregation, feature selection, and model evaluation.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Solution</h4>
+                  <p>Built a workflow for cleaning, aggregating, and modeling industrial data using supervised learning approaches, with comparison between linear and non-linear predictive models.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Technologies</h4>
+                  <div class="pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">XGBoost</span>
+                    <span class="pill">Random Forest</span>
+                    <span class="pill">OLS</span>
+                    <span class="pill">Data preprocessing</span>
+                  </div>
+                </div>
+                <div class="project-block">
+                  <h4>Results / Impact</h4>
+                  <p>Showed that non-linear models improved predictive quality and created a practical basis for short-term energy decision support.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card sr">
+              <div class="project-topline">
+                <span class="project-tag">Computer Vision</span>
+                <span class="project-period">Quality control</span>
+              </div>
+              <h3>Defective Parts Detection with YOLOv8</h3>
+              <div class="project-body">
+                <div class="project-block">
+                  <h4>Context</h4>
+                  <p>Built as an industrial quality control project to automate detection and counting of defective mechanical parts.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Problem</h4>
+                  <p>Manual inspection is time-consuming and prone to inconsistency when distinguishing conforming and defective components.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Solution</h4>
+                  <p>Trained an object detection pipeline with annotated datasets to identify bolts, washers, and faulty washers in controlled images.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Technologies</h4>
+                  <div class="pills">
+                    <span class="pill">YOLOv8</span>
+                    <span class="pill">Edge Impulse</span>
+                    <span class="pill">Python</span>
+                    <span class="pill">Computer Vision</span>
+                  </div>
+                </div>
+                <div class="project-block">
+                  <h4>Results / Impact</h4>
+                  <p>Achieved accurate detection and counting behavior, demonstrating the value of AI-assisted inspection for industrial quality processes.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card sr">
+              <div class="project-topline">
+                <span class="project-tag">Industrial Systems</span>
+                <span class="project-period">Automation</span>
+              </div>
+              <h3>Crane Fire Safety Supervision System</h3>
+              <div class="project-body">
+                <div class="project-block">
+                  <h4>Context</h4>
+                  <p>Conducted in an industrial port environment where fire safety and operator reliability are critical.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Problem</h4>
+                  <p>Large mechanical systems require clear supervision logic to reduce risk exposure and support safer system behavior.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Solution</h4>
+                  <p>Studied the existing fire protection setup and developed a supervision-oriented engineering approach for monitoring and secure operation.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Technologies</h4>
+                  <div class="pills">
+                    <span class="pill">TIA Portal</span>
+                    <span class="pill">STEP 7</span>
+                    <span class="pill">Simulation</span>
+                    <span class="pill">Supervision</span>
+                  </div>
+                </div>
+                <div class="project-block">
+                  <h4>Results / Impact</h4>
+                  <p>Strengthened understanding of industrial safety constraints, monitoring logic, and control-oriented system analysis.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card sr">
+              <div class="project-topline">
+                <span class="project-tag">Digital Design</span>
+                <span class="project-period">Cryptography</span>
+              </div>
+              <h3>RC6 Cryptography Implementation on FPGA</h3>
+              <div class="project-body">
+                <div class="project-block">
+                  <h4>Context</h4>
+                  <p>Academic FPGA project centered on hardware implementation of a symmetric encryption algorithm.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Problem</h4>
+                  <p>Implementing cryptographic behavior in hardware requires careful architecture, key scheduling, and verification logic.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Solution</h4>
+                  <p>Developed encryption and decryption modules in VHDL with finite state machine control, key scheduling, and testbench-based validation.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Technologies</h4>
+                  <div class="pills">
+                    <span class="pill">VHDL</span>
+                    <span class="pill">FPGA</span>
+                    <span class="pill">FSM</span>
+                    <span class="pill">ModelSim</span>
+                  </div>
+                </div>
+                <div class="project-block">
+                  <h4>Results / Impact</h4>
+                  <p>Improved competency in hardware description, modular digital design, and verification methodology for secure data-oriented systems.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card sr">
+              <div class="project-topline">
+                <span class="project-tag">Modeling</span>
+                <span class="project-period">Optimization</span>
+              </div>
+              <h3>Flow Shop Scheduling and System Modeling</h3>
+              <div class="project-body">
+                <div class="project-block">
+                  <h4>Context</h4>
+                  <p>Project work focused on production scheduling and structured modeling of complex engineering systems.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Problem</h4>
+                  <p>Industrial scheduling and system planning require formal methods to improve efficiency, constraints handling, and visualization.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Solution</h4>
+                  <p>Developed scheduling workflows with Johnson and CDS approaches, along with formal modeling work for engineered systems such as autonomous delivery concepts.</p>
+                </div>
+                <div class="project-block">
+                  <h4>Technologies</h4>
+                  <div class="pills">
+                    <span class="pill">Python</span>
+                    <span class="pill">CustomTkinter</span>
+                    <span class="pill">Gantt charts</span>
+                    <span class="pill">System modeling</span>
+                  </div>
+                </div>
+                <div class="project-block">
+                  <h4>Results / Impact</h4>
+                  <p>Built structured decision-support views and strengthened practical understanding of optimization logic and engineering abstraction.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading sr">
+            <span class="section-kicker">Skills</span>
+            <h2>Structured technical skills</h2>
+            <p>Core domains aligned with embedded systems and engineering-oriented roles.</p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card sr">
+              <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3>Embedded Systems</h3>
+              <div class="pills">
+                <span class="pill">VHDL</span>
+                <span class="pill">FPGA</span>
+                <span class="pill">UART</span>
+              </div>
+            </article>
+
+            <article class="skill-card sr">
+              <div class="skill-icon"><i class="fa-solid fa-wave-square"></i></div>
+              <h3>Control Systems</h3>
+              <div class="pills">
+                <span class="pill">Stability</span>
+                <span class="pill">Routh</span>
+                <span class="pill">PID</span>
+              </div>
+            </article>
+
+            <article class="skill-card sr">
+              <div class="skill-icon"><i class="fa-solid fa-sliders"></i></div>
+              <h3>Signal Processing</h3>
+              <div class="pills">
+                <span class="pill">Sampling</span>
+                <span class="pill">Filtering</span>
+                <span class="pill">System analysis</span>
+              </div>
+            </article>
+
+            <article class="skill-card sr">
+              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Programming</h3>
+              <div class="pills">
+                <span class="pill">Python</span>
+                <span class="pill">SQL</span>
+                <span class="pill">C</span>
+              </div>
+            </article>
+
+            <article class="skill-card sr">
+              <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <h3>Tools</h3>
+              <div class="pills">
+                <span class="pill">MATLAB</span>
+                <span class="pill">Simulink</span>
+                <span class="pill">Docker</span>
+                <span class="pill">ICEcube2</span>
+                <span class="pill">ModelSim</span>
+              </div>
+            </article>
+
+            <article class="skill-card sr">
+              <div class="skill-icon"><i class="fa-solid fa-industry"></i></div>
+              <h3>Engineering Orientation</h3>
+              <div class="pills">
+                <span class="pill">Industrial systems</span>
+                <span class="pill">Modeling</span>
+                <span class="pill">Simulation</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="section">
+        <div class="container">
+          <div class="section-heading sr">
+            <span class="section-kicker">Current Focus</span>
+            <h2>What I'm working on</h2>
+            <p>Technical directions I want to deepen through internships, alternance, and entry-level engineering opportunities.</p>
+          </div>
+
+          <div class="focus-grid">
+            <article class="focus-card sr">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>FPGA UART optimization</h3>
+              <p>Improving digital communication reliability, timing behavior, and reusable hardware blocks for embedded communication systems.</p>
+            </article>
+
+            <article class="focus-card sr">
+              <i class="fa-solid fa-gears"></i>
+              <h3>Industrial system simulation</h3>
+              <p>Working on simulation-driven understanding of industrial processes, supervision logic, and performance-oriented engineering workflows.</p>
+            </article>
+
+            <article class="focus-card sr">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>Conveyor system modeling</h3>
+              <p>Exploring structured modeling of automated material handling systems with an emphasis on control logic, behavior, and operational reliability.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-panel sr">
+            <div class="contact-copy">
+              <span class="section-kicker">Contact</span>
+              <h2>Available for engineering opportunities</h2>
+              <p>I am currently seeking internships, alternance, and entry-level roles aligned with embedded systems, FPGA, signal processing, and industrial engineering.</p>
+              <p class="contact-note">Open to relocation (France / Europe)</p>
+            </div>
+
+            <div class="contact-list">
+              <a class="contact-item" href="mailto:doae.oudadda@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>doae.oudadda@gmail.com</span>
+              </a>
+              <a class="contact-item" href="https://github.com/DOAE25" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+                <span>github.com/DOAE25</span>
+              </a>
+              <a class="contact-item" href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 Doae Oudadda</p>
+        <p>Engineering portfolio for international opportunities</p>
+      </div>
+    </footer>
   </div>
 
   <script src="scripts.js" defer></script>
