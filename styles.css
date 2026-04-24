@@ -489,6 +489,7 @@ h1 {
 .pill {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   min-height: 34px;
   padding: 0 12px;
   border-radius: 999px;
@@ -496,6 +497,11 @@ h1 {
   background: rgba(255, 255, 255, 0.035);
   color: var(--text);
   font-size: 0.88rem;
+}
+
+.pill i {
+  color: var(--accent-strong);
+  font-size: 0.92rem;
 }
 
 .skills-grid,
@@ -534,6 +540,30 @@ h1 {
   margin: 12px 0 0;
   color: var(--muted);
   font-size: 0.96rem;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.focus-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text);
+  font-size: 0.88rem;
+}
+
+.focus-tag i {
+  color: var(--accent-strong);
 }
 
 .contact-panel {
