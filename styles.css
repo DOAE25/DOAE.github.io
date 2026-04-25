@@ -541,7 +541,12 @@ h1 {
   box-shadow: 0 0 18px rgba(0, 212, 255, 0.18);
 }
 
-.skills-grid,
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -561,10 +566,16 @@ h1 {
   font-size: 1.2rem;
 }
 
-.skill-icons-row {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 4px;
+.skill-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+}
+
+.skill-card li {
+  line-height: 1.55;
 }
 
 .skill-icon,
@@ -686,7 +697,7 @@ h1 {
   .hero-grid,
   .contact-panel,
   .projects-grid,
-  .skills-grid,
+  .skills-container,
   .focus-grid {
     grid-template-columns: 1fr;
   }
@@ -740,6 +751,11 @@ h1 {
 }
 
 @media (max-width: 680px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .icon-box {
     width: 46px;
     height: 46px;
@@ -747,10 +763,6 @@ h1 {
 
   .icon-box i {
     font-size: 18px;
-  }
-
-  .skill-icons-row {
-    gap: 10px;
   }
 
   .project-heading-wrap {
@@ -769,7 +781,7 @@ h1 {
   .project-card,
   .skill-card,
   .focus-card {
-    padding: 20px;
+    padding: 18px;
   }
 
   .portrait-footer,
