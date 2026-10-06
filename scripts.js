@@ -1,17 +1,17 @@
 (function themeController() {
   const root = document.documentElement;
   const button = document.getElementById("themeBtn");
-  const saved = localStorage.getItem("theme");
-
-  if (saved === "dark") {
-    root.classList.add("dark");
-  }
-
+  let saved = null;
+  try { saved = localStorage.getItem("theme"); } catch (e) {}
+  if (saved === "light") root.classList.add("light");
   if (!button) return;
-
+  const icon = button.querySelector("i");
+  const sync = () => { if (icon) icon.className = root.classList.contains("light") ? "fa-regular fa-sun" : "fa-regular fa-moon"; };
+  sync();
   button.addEventListener("click", () => {
-    root.classList.toggle("dark");
-    localStorage.setItem("theme", root.classList.contains("dark") ? "dark" : "light");
+    root.classList.toggle("light");
+    try { localStorage.setItem("theme", root.classList.contains("light") ? "light" : "dark"); } catch (e) {}
+    sync();
   });
 })();
 
@@ -24,6 +24,7 @@
 
   button.addEventListener("click", () => {
     nav.classList.toggle("open");
+    button.setAttribute("aria-expanded", nav.classList.contains("open"));
   });
 
   links.forEach((link) => {
@@ -55,7 +56,7 @@
 })();
 
 (function activeNavLink() {
-  const links = Array.from(document.querySelectorAll(".links a"));
+  const links = Array.from(document.querySelectorAll(".links a")).filter((link) => (link.getAttribute("href") || "").startsWith("#"));
   const sections = links
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
